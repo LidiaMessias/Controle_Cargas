@@ -1,0 +1,12 @@
+CREATE SCHEMA IF NOT EXISTS `controle_carga` DEFAULT CHARACTER SET latin1 ; 
+
+CREATE TABLE `produtos` (
+  `idproduto` int(11) NOT NULL AUTO_INCREMENT,
+  `produto` varchar(45) NOT NULL,
+  `fornecedor` varchar(45) NOT NULL,
+  `quantidade` int(11) NOT NULL,
+  `categoria` varchar(45) NOT NULL,
+  `dataEntrada` date NOT NULL,
+  `dataLimite` date NOT NULL,
+  PRIMARY KEY (`idproduto`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1
